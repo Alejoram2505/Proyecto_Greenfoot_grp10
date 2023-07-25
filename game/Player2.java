@@ -28,15 +28,15 @@ public class Player2 extends Actor
     }
     public void moveAround()
     {
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("D"))
         {
             move(4);
         }
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("A"))
         {
             move(-4);
         }
-        if (Greenfoot.isKeyDown("space")&&(onGround()==true))
+        if (Greenfoot.isKeyDown("W")&&(onGround()==true))
         {
             vSpeed = jumpHeight;
             fall();
